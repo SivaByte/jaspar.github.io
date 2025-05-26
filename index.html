@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaspar - Celestial Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="relative min-h-screen">
+
+    <div id="particle-container"></div>
+
+    <header class="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6 bg-black bg-opacity-30 backdrop-blur-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="font-orbitron text-2xl sm:text-3xl font-bold glowing-text">JASPAR</a>
+            <div class="space-x-3 sm:space-x-4 text-xs sm:text-sm md:text-base">
+                <a href="#portfolio" class="nav-item">Portfolio</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#game" class="nav-item">Cosmic Challenge</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20 sm:pt-24">
+
+        <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-30">
+                 </div>
+            <div class="relative z-10">
+                <h1 class="font-orbitron text-5xl md:text-7xl font-bold mb-4 glowing-text">Welcome, Star Voyager!</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-slate-300">
+                    I'm Jaspar. Embark on a journey through my universe of creative projects and discoveries.
+                </p>
+                <a href="#portfolio" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-blue-400/50 transform hover:scale-105">
+                    Explore My Universe <i class="fas fa-rocket ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="min-h-screen py-20 px-6 relative">
+            <h2 class="font-orbitron text-4xl md:text-5xl font-bold text-center mb-16 glowing-text">Project Constellations</h2>
+            <div class="container mx-auto relative">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 relative z-10"> 
+                    <div class="celestial-body p-6 bg-slate-800 rounded-xl shadow-xl text-center flex flex-col items-center" data-modal-target="project1Modal">
+                        <div class="w-24 h-24 bg-sky-500 rounded-full flex items-center justify-center mb-4 shadow-lg animate-pulse">
+                            <i class="fas fa-shield-alt text-4xl text-sky-100"></i> 
+                        </div>
+                        <h3 class="font-orbitron text-2xl font-semibold mb-2 text-sky-300">Provider Compliance</h3>
+                        <p class="text-sm text-slate-400 mb-3">Website for NDIS and Aged Care compliance solutions.</p>
+                        <span class="text-xs bg-sky-600 text-sky-100 px-2 py-1 rounded-full">Web Development</span>
+                    </div>
+
+                    <div class="celestial-body p-6 bg-slate-800 rounded-xl shadow-xl text-center flex flex-col items-center" data-modal-target="project2Modal">
+                        <div class="w-24 h-24 bg-emerald-500 rounded-full flex items-center justify-center mb-4 shadow-lg animate-pulse delay-200">
+                            <i class="fas fa-cubes text-4xl text-emerald-100"></i> 
+                        </div>
+                        <h3 class="font-orbitron text-2xl font-semibold mb-2 text-emerald-300">BIM-ONE</h3>
+                        <p class="text-sm text-slate-400 mb-3">Platform for BIM content and specification management.</p>
+                        <span class="text-xs bg-emerald-600 text-emerald-100 px-2 py-1 rounded-full">Web Development</span>
+                    </div>
+
+                    <div class="celestial-body p-6 bg-slate-800 rounded-xl shadow-xl text-center flex flex-col items-center" data-modal-target="project3Modal">
+                        <div class="w-24 h-24 bg-rose-500 rounded-full flex items-center justify-center mb-4 shadow-lg animate-pulse delay-500">
+                            <i class="fas fa-paint-brush text-4xl text-rose-100"></i>
+                        </div>
+                        <h3 class="font-orbitron text-2xl font-semibold mb-2 text-rose-300">Poster Designs</h3>
+                        <p class="text-sm text-slate-400 mb-3">A collection of vibrant and impactful poster graphics.</p>
+                        <span class="text-xs bg-rose-600 text-rose-100 px-2 py-1 rounded-full">Graphic Design</span>
+                    </div>
+                    
+                    <div class="celestial-body p-6 bg-slate-800 rounded-xl shadow-xl text-center flex flex-col items-center" data-modal-target="project4Modal">
+                        <div class="w-24 h-24 bg-amber-500 rounded-full flex items-center justify-center mb-4 shadow-lg animate-pulse delay-700">
+                            <i class="fas fa-copyright text-4xl text-amber-100"></i>
+                        </div>
+                        <h3 class="font-orbitron text-2xl font-semibold mb-2 text-amber-300">Logo Creations</h3>
+                        <p class="text-sm text-slate-400 mb-3">Crafting unique and memorable brand identities.</p>
+                        <span class="text-xs bg-amber-600 text-amber-100 px-2 py-1 rounded-full">Branding</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="min-h-screen py-20 px-6 bg-black bg-opacity-20 flex items-center justify-center">
+            <div class="container mx-auto text-center max-w-3xl">
+                <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-8 border-4 border-blue-400 shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/200x200/0a0f1f/87CEFA?text=Jaspar" alt="Jaspar" class="w-full h-full object-cover">
+                </div>
+                <h2 class="font-orbitron text-4xl md:text-5xl font-bold mb-6 glowing-text">About My Cosmos</h2>
+                <p class="text-lg md:text-xl mb-4 text-slate-300">
+                    Hello! I'm Jaspar, a passionate creator navigating the vast expanse of technology and design. My journey began with a spark of curiosity, evolving into a deep-seated drive to build, innovate, and explore new creative horizons.
+                </p>
+                <p class="text-lg md:text-xl mb-8 text-slate-300">
+                    I specialize in crafting impactful websites, engaging graphic designs, and memorable brand identities. I believe in creating solutions that are not only functional but also inspiring and visually compelling. Let's create something stellar together!
+                </p>
+                <div class="mt-8">
+                    <h4 class="font-orbitron text-2xl mb-4 text-blue-300">Core Strengths:</h4>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Web Development</span>
+                        <span class="bg-teal-500 text-white px-4 py-2 rounded-full text-sm">Graphic Design</span>
+                        <span class="bg-green-500 text-white px-4 py-2 rounded-full text-sm">Problem Solving</span>
+                        <span class="bg-indigo-500 text-white px-4 py-2 rounded-full text-sm">User Experience</span>
+                        <span class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm">Detail-Oriented</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game" class="min-h-screen py-20 px-4 sm:px-6 flex flex-col items-center justify-center">
+            <div class="container mx-auto text-center max-w-3xl">
+                <h2 class="font-orbitron text-4xl md:text-5xl font-bold mb-8 glowing-text">Cosmic Challenge: Star Catcher!</h2>
+                <p class="text-lg md:text-xl mb-8 text-slate-300">
+                    Test your reflexes! Click on the falling stars to collect them before they vanish into the void.
+                </p>
+                <div class="bg-slate-800 p-4 sm:p-6 rounded-xl shadow-2xl">
+                    <canvas id="gameCanvas" width="600" height="400" class="mx-auto block max-w-full"></canvas>
+                    <div class="mt-4 flex flex-col sm:flex-row justify-around items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <div class="text-xl">
+                            <span class="font-orbitron text-sky-300">Score:</span> <span id="scoreDisplay" class="font-bold text-yellow-400">0</span>
+                        </div>
+                        <div class="text-xl">
+                            <span class="font-orbitron text-sky-300">Time:</span> <span id="timeDisplay" class="font-bold text-red-400">30</span>s
+                        </div>
+                        <button id="startGameButton" class="game-button font-orbitron py-2 px-6 rounded-lg text-lg">
+                            Start Game <i class="fas fa-play ml-2"></i>
+                        </button>
+                    </div>
+                    <p id="gameOverMessage" class="mt-4 text-2xl font-orbitron text-yellow-400 hidden"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="min-h-screen py-20 px-6 flex items-center justify-center">
+            <div class="container mx-auto max-w-2xl text-center">
+                <h2 class="font-orbitron text-4xl md:text-5xl font-bold mb-10 glowing-text">Launch a Message</h2>
+                <p class="text-lg md:text-xl mb-8 text-slate-300">
+                    Have a project in mind, a question, or just want to connect across the cosmos? Send your signal!
+                </p>
+                {/*
+                  To make this form work, replace YOUR_UNIQUE_FORM_ID with your actual Formspree form ID.
+                  You can get this by creating a new form on formspree.io.
+                  The JavaScript that previously handled form submission and showed a front-end message
+                  has been removed, as Formspree will handle the submission process.
+                */}
+                <form action="https://formspree.io/f/YOUR_UNIQUE_FORM_ID" method="POST" class="space-y-6 bg-slate-800 p-8 rounded-xl shadow-2xl">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-sky-300 mb-1 text-left">Your Name</label>
+                        <input type="text" name="name" id="name" required class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition text-white" placeholder="e.g., Nova Stargazer">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-sky-300 mb-1 text-left">Your Email</label>
+                        <input type="email" name="email" id="email" required class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition text-white" placeholder="e.g., nova@galaxy.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-sky-300 mb-1 text-left">Your Message</label>
+                        <textarea name="message" id="message" rows="5" required class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition text-white custom-scrollbar" placeholder="Your cosmic query or brilliant idea..."></textarea>
+                    </div>
+                    {/* You can add a Honeypot field for spam protection if desired, e.g., <input type="text" name="_gotcha" style="display:none"> */}
+                    <div>
+                        <button type="submit" class="w-full bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-green-400/50 transform hover:scale-105">
+                            Transmit Signal <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+                {/* The form-message div below is no longer used by the default Formspree setup, but can be kept for other JS-driven messages if needed in the future */}
+                <div id="form-message" class="mt-6 p-3 rounded-md text-white hidden"></div> 
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 px-6 text-center bg-black bg-opacity-50">
+        <div class="mb-4">
+            <a href="#" class="text-slate-400 hover:text-sky-400 mx-3 transition"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-slate-400 hover:text-sky-400 mx-3 transition"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#" class="text-slate-400 hover:text-sky-400 mx-3 transition"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+        <p class="text-sm text-slate-500">&copy; <span id="currentYear"></span> Jaspar. All rights reserved in this universe.</p>
+    </footer>
+
+    <div id="project1Modal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 opacity-0 transform scale-95 pointer-events-none z-[60]">
+        <div class="modal-content bg-slate-800 p-6 sm:p-8 rounded-lg shadow-2xl w-full max-w-2xl relative custom-scrollbar">
+            <button class="modal-close absolute top-4 right-4 text-slate-400 hover:text-white text-2xl">&times;</button>
+            <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Provider+Compliance+Screenshot" alt="Provider Compliance Australia Screenshot" class="w-full h-auto rounded-md mb-6 shadow-lg">
+            <h3 class="font-orbitron text-3xl font-bold mb-3 text-sky-300">Provider Compliance Australia</h3>
+            <p class="text-sm text-slate-400 mb-2">Category: Web Development</p>
+            <div class="space-y-3 text-slate-300 mb-6">
+                <p>Developed a comprehensive website for Provider Compliance Australia, focusing on NDIS and Aged Care compliance solutions. The site aims to be informative and user-friendly for service providers.</p>
+                <p>Key features include clear service explanations, resource sections, and easy contact methods.</p>
+                <p>Technologies used: [e.g., WordPress, Custom HTML/CSS/JS, specific CMS or framework - please update]</p>
+            </div>
+            <a href="https://www.providercompliance.com.au/" target="_blank" class="inline-block bg-sky-500 hover:bg-sky-400 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                Visit Live Site <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="project2Modal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 opacity-0 transform scale-95 pointer-events-none z-[60]">
+        <div class="modal-content bg-slate-800 p-6 sm:p-8 rounded-lg shadow-2xl w-full max-w-2xl relative custom-scrollbar">
+            <button class="modal-close absolute top-4 right-4 text-slate-400 hover:text-white text-2xl">&times;</button>
+            <img src="https://placehold.co/600x400/1e293b/34d399?text=BIM-ONE+Screenshot" alt="BIM-ONE Screenshot" class="w-full h-auto rounded-md mb-6 shadow-lg">
+            <h3 class="font-orbitron text-3xl font-bold mb-3 text-emerald-300">BIM-ONE</h3>
+            <p class="text-sm text-slate-400 mb-2">Category: Web Development / Platform</p>
+            <div class="space-y-3 text-slate-300 mb-6">
+                <p>Contributed to the development of the BIM-ONE website, a platform for BIM content and specification management. The focus was on creating a seamless user experience for professionals in the architecture, engineering, and construction industries.</p>
+                <p>Key aspects involved [e.g., front-end development, UI enhancements, specific feature implementation - please update].</p>
+                <p>Technologies used: [e.g., React, Angular, Vue, specific backend tech - please update]</p>
+            </div>
+            <a href="https://www.bim-one.com.au/" target="_blank" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                Visit Live Site <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="project3Modal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 opacity-0 transform scale-95 pointer-events-none z-[60]">
+        <div class="modal-content bg-slate-800 p-6 sm:p-8 rounded-lg shadow-2xl w-full max-w-2xl relative custom-scrollbar">
+            <button class="modal-close absolute top-4 right-4 text-slate-400 hover:text-white text-2xl">&times;</button>
+            <img src="https://placehold.co/600x400/1e293b/f43f5e?text=Poster+Design+Example" alt="Poster Design Example" class="w-full h-auto rounded-md mb-6 shadow-lg">
+            <h3 class="font-orbitron text-3xl font-bold mb-3 text-rose-300">Poster Designs Showcase</h3>
+            <p class="text-sm text-slate-400 mb-2">Category: Graphic Design</p>
+            <div class="space-y-3 text-slate-300 mb-6">
+                <p>A collection of visually striking posters designed for various events, promotions, or artistic expression. Each poster aims to capture attention and convey its message effectively.</p>
+                <p>Focus areas: Typography, color theory, composition, and visual hierarchy.</p>
+                <p>Tools used: Adobe Illustrator, Photoshop, InDesign.</p>
+            </div>
+            <a href="#" target="_blank" class="inline-block bg-rose-500 hover:bg-rose-400 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                View Poster Gallery <i class="fas fa-images ml-2"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div id="project4Modal" class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 opacity-0 transform scale-95 pointer-events-none z-[60]">
+        <div class="modal-content bg-slate-800 p-6 sm:p-8 rounded-lg shadow-2xl w-full max-w-2xl relative custom-scrollbar">
+            <button class="modal-close absolute top-4 right-4 text-slate-400 hover:text-white text-2xl">&times;</button>
+            <img src="https://placehold.co/600x400/1e293b/f59e0b?text=Logo+Design+Example" alt="Logo Design Example" class="w-full h-auto rounded-md mb-6 shadow-lg">
+            <h3 class="font-orbitron text-3xl font-bold mb-3 text-amber-300">Logo Creations Portfolio</h3>
+            <p class="text-sm text-slate-400 mb-2">Category: Branding / Logo Design</p>
+            <div class="space-y-3 text-slate-300 mb-6">
+                <p>Specializing in crafting unique and memorable logos that form the cornerstone of a brand's identity. This collection showcases a variety of styles, from minimalist to intricate, tailored to client needs.</p>
+                <p>Process involves: Understanding brand values, conceptualization, sketching, digital rendering, and refinement.</p>
+                <p>Tools used: Adobe Illustrator, Figma.</p>
+            </div>
+            <a href="#" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-400 text-black font-semibold py-2 px-6 rounded-lg transition duration-300">
+                Explore Logo Concepts <i class="fas fa-lightbulb ml-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
